@@ -1,0 +1,15 @@
+{
+  "name": "rapin-starter-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rapin start",
+    "dev": "rapin"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rapin": "0.0.2"
+  }
+}

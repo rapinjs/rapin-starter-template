@@ -20,6 +20,7 @@ export class ModelBlogPost extends Model {
         post.image = data.image
 
         await this.db.save('Post', post)
+        return post
     }
 
     async getPost(postId) {

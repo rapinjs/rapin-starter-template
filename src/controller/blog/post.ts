@@ -26,8 +26,11 @@ export class ControllerBlogPost extends Controller {
     @GET('/post')
     async list(){
         this.load.model('blog/post')
-        const posts = await this.model_blog_post.getPosts()
-
+        let posts = await this.model_blog_post.getPosts()
+        for(let key in posts) {
+          posts[key].imageUrl = await this.image.link(posts[key].image)
+        }
+        
         this.response.setOutput(posts)
     }
     @GET('/post/:postId')
@@ -41,21 +44,25 @@ export class ControllerBlogPost extends Controller {
 
         data['title'] = this.language.get('text_title')
 
-        const post_info = await this.model_blog_post.getPost(this.request.params.postId)
+        let post_info = await this.model_blog_post.getPost(this.request.params.postId)
+
+        post_info.imageUrl = await this.image.link(post_info.image)
 
         this.response.setOutput(post_info)
     }
 
-    @GET('/post/:postId/image')
-    async image(){
+    @POST('/post/:postId/image')
+    async uploadImage(){
         if(!_.isUndefined(this.request.files.file)) {
             this.load.model('blog/post')
 
             let post_info = await this.model_blog_post.getPost(this.request.params.postId)
 
-            post_info.image ='/posts/'+Math.random().toString(36).substring(2, 15)+'.jpg'
+            post_info.image ='posts/'+Math.random().toString(36).substring(2, 15)+'.jpg'
 
-            this.file.upload(this.request.files.file, DIR_IMAGE + post_info.image)
+            this.file.upload(this.request.files.file, DIR_IMAGE + '/' + post_info.image)
+
+            post_info = await this.model_blog_post.editPost(this.request.params.postId, post_info)
       
             this.response.setOutput(post_info)
         } else {

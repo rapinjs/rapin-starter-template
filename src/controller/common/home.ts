@@ -4,10 +4,10 @@ import { Listing } from 'rapin/lib/helper/event'
 
 export class ControllerCommonHome extends Controller {
   @GET('/home', 'html')
-  public index() {
+  public async index() {
     this.log.write('bla-bla-bla-')
     this.log.write(this.style.link('test'))
-    this.response.setOutput(this.load.view('common/home', {test: '213123123'}))
+    this.response.setOutput(await this.load.view('common/home', {test: '213123123'}))
   }
 
   @GET('/redirect', 'html')

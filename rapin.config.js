@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   //Database access
   db: {
-    engine: 'mysql',
+    type: 'mysql',
     database: 'nodetest',
     hostname: 'localhost',
     password: '',
@@ -15,9 +15,8 @@ module.exports = {
   },
   //Template setting
   template: {
-    engine: 'pug'
+    engine: 'twig'
   },
-  storage: path.resolve(__dirname, './storage'),
   //Setting cache system
   cache: {
     engine: 'file',

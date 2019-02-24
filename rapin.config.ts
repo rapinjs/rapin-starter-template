@@ -3,11 +3,11 @@ module.exports = {
   //Database access
   db: {
     type: 'mysql',
-    database: 'nodetest',
-    hostname: 'localhost',
-    password: '',
-    username: 'root',
-    port: '3306',
+    database: process.env.DB_DATABASE,
+    hostname: process.env.DB_HOSTNAME,
+    password: process.env.DB_PASSWORD,
+    username: process.env.DB_USERNAME,
+    port: process.env.DB_PORT
   },
   //Style setting
   style: {
@@ -29,11 +29,13 @@ module.exports = {
   //Access to mail
   mail: {
     service: 'gmail',
-    user: 'youremail',
-    password: 'test',
+    user: process.env.MAIL_USER,
+    password: process.env.MAIL_PASSWORD
   },
   //List plugins
   plugins: [
-    'plugins/testPlugin.ts'
+    'plugins/testPlugin.ts',
+    '@rapin/typeorm',
+    '@rapin/typeorm-auth'
   ]
 }

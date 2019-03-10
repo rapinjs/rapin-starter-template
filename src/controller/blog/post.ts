@@ -3,6 +3,7 @@ import { GET, POST, PUT, required } from "rapin/lib/helper/request";
 import * as _ from "lodash";
 import { Auth } from "@rapin/typeorm-auth";
 export class ControllerBlogPost extends Controller {
+  @Auth()
   @POST("/post")
   @required(["name", "title", "description", "image"])
   async create() {
@@ -13,6 +14,7 @@ export class ControllerBlogPost extends Controller {
     this.response.setOutput(postInfo);
   }
 
+  @Auth()
   @PUT("/post/:postId")
   @required(["name", "title", "description", "image"])
   async update() {
@@ -37,8 +39,7 @@ export class ControllerBlogPost extends Controller {
 
     this.response.setOutput(posts);
   }
-  
-  @Auth()
+
   @GET("/post/:postId")
   async post() {
     this.load.language("blog/post");
@@ -58,6 +59,7 @@ export class ControllerBlogPost extends Controller {
     this.response.setOutput(post_info);
   }
 
+  @Auth()
   @POST("/post/:postId/image")
   async uploadImage() {
     if (!_.isUndefined(this.request.files.file)) {

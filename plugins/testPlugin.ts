@@ -22,4 +22,9 @@ export default class testPlugin {
   public onAfterInitRouter() {
     console.log('onAfterInitRouter')
   }
+
+  public onImageResizeAfter(data) {
+    console.log('onImageResizeAfter')
+    return data
+  }
 }

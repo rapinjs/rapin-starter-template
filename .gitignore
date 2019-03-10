@@ -3,3 +3,9 @@ node_modules
 .env.*
 .vscode
 static/images
+.idea/workspace.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/rapin-starter-template.iml
+.idea/vcs.xml

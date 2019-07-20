@@ -1,8 +1,5 @@
 {
   "compilerOptions": {
-    "types": [
-      "node"
-    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -13,20 +10,9 @@
     "outDir": "./bin",
     "declaration": true,
     "baseUrl": ".",
+    "types": ["node", "@rapin/typeorm"],
     "paths": {
-      "*": [
-        "*",
-        "system/*",
-        "src/*",
-        "system/helper/*"
-      ]
+      "*": ["*", "src/*"]
     }
-  },
-  "include": [
-    "src/**/*",
-    "system/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }

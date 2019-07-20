@@ -1,15 +1,15 @@
 import { isUndefined, size } from 'lodash'
-import {Model} from 'rapin/lib/common'
+import {Model} from 'rapin'
 
 export class ModelUserRole extends Model {
   public async addRole(data) {
-    const role = await this.db.create('Role')
+    const role = await this.$context.db.create('Role')
 
     role.codename = data.codename
     role.name = data.name
     role.description = data.description
 
-    await this.db.save('Role', role)
+    await this.$context.db.save('Role', role)
 
     return role
   }
@@ -20,13 +20,13 @@ export class ModelUserRole extends Model {
     role.name = data.name
     role.description = data.description
 
-    await this.db.save('Role', role)
+    await this.$context.db.save('Role', role)
 
     return role
   }
 
   public async getRole(roleId) {
-    return await this.db.findOne('Role', {roleId})
+    return await this.$context.db.findOne('Role', {roleId})
   }
 
   public async getRoles(data) {
@@ -43,7 +43,7 @@ export class ModelUserRole extends Model {
       options.take = data.limit
     }
 
-    return await this.db.find('Role', options)
+    return await this.$context.db.find('Role', options)
   }
 
   public async getTotalRoles() {
@@ -55,6 +55,6 @@ export class ModelUserRole extends Model {
       where: {},
     }
 
-    return size(await this.db.find('Role', options))
+    return size(await this.$context.db.find('Role', options))
   }
 }

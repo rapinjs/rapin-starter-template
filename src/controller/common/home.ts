@@ -1,19 +1,18 @@
-import { Controller } from 'rapin/lib/common'
-import { GET } from 'rapin/lib/helper/request'
-import { Listing } from 'rapin/lib/helper/event'
+import { Controller, GET, Listing } from 'rapin'
 
 export class ControllerCommonHome extends Controller {
   @GET('/home', 'html')
   public async index() {
-    this.log.write('bla-bla-bla-')
-    this.log.write(this.style.link('test'))
-    this.response.setOutput(await this.load.view('common/home', {test: '213123123'}))
+    this.$context.log.write('bla-bla-bla-')
+    this.$context.log.write(this.style.link('test'))
+
+    this.$context.response.setOutput(await this.load.view('common/home', {test: '213123123'}))
   }
 
   @GET('/redirect', 'html')
   public redirect() {
-    this.log.write('bla-bla-bla-')
-    this.response.redirect('google.com')
+    this.$context.log.write('bla-bla-bla-')
+    this.$context.response.redirect('google.com')
   }
 
   @Listing('controller/common/home/index', 'before')

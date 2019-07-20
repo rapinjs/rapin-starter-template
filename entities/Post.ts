@@ -34,4 +34,6 @@ export class Post {
     length: 256,
   })
   public image: string
+
+  public imageUrl: string
 }

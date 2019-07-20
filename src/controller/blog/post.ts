@@ -1,72 +1,79 @@
-import { Controller, DIR_IMAGE } from "rapin/lib/common";
-import { GET, POST, PUT, required } from "rapin/lib/helper/request";
+import { Controller, DIR_IMAGE, GET, POST, PUT, required } from "rapin";
 import * as _ from "lodash";
 import { Auth } from "@rapin/typeorm-auth";
+
 export class ControllerBlogPost extends Controller {
   @Auth()
   @POST("/post")
   @required(["name", "title", "description", "image"])
   async create() {
-    this.load.model("blog/post");
-    const postId = await this.model_blog_post.addPost(this.request.post);
-    const postInfo = await this.model_blog_post.getPost(postId);
-
-    this.response.setOutput(postInfo);
+    this.$context.load.model("blog/post");
+    const postId = await this.$context.model_blog_post.addPost(
+      this.request.post
+    );
+    const postInfo = await this.$context.model_blog_post.getPost(postId);
+    this.$context.response.setOutput(postInfo);
   }
 
   @Auth()
   @PUT("/post/:postId")
   @required(["name", "title", "description", "image"])
   async update() {
-    this.load.model("blog/post");
+    this.$context.load.model("blog/post");
 
-    await this.model_blog_post.editPost(
-      this.request.params.postId,
-      this.request.post
+    await this.$context.model_blog_post.editPost(
+      this.$context.request.params.postId,
+      this.$context.request.post
     );
-    const post = await this.model_blog_post.getPost(this.request.params.postId);
+    const post = await this.model_blog_post.getPost(
+      this.request.params.postId
+    );
 
-    this.response.setOutput(post);
+    this.$context.response.setOutput(post);
   }
 
   @GET("/post")
   async list() {
-    this.load.model("blog/post");
-    let posts = await this.model_blog_post.getPosts();
+    this.$context.load.model("blog/post");
+
+    let posts = await this.$context.model_blog_post.getPosts();
+
     for (let key in posts) {
-      posts[key].imageUrl = await this.image.link(posts[key].image);
+      posts[key].imageUrl = await this.$context.image.link(
+        posts[key].image
+      );
     }
 
-    this.response.setOutput(posts);
+    this.$context.response.setOutput(posts);
   }
 
   @GET("/post/:postId")
   async post() {
-    this.load.language("blog/post");
+    this.$context.load.language("blog/post");
 
-    this.load.model("blog/post");
+    this.$context.load.model("blog/post");
 
     let data = {};
 
-    data["title"] = this.language.get("text_title");
+    data["title"] = this.$context.language.get("text_title");
 
-    let post_info = await this.model_blog_post.getPost(
+    let post_info = await this.$context.model_blog_post.getPost(
       this.request.params.postId
     );
 
-    post_info.imageUrl = await this.image.link(post_info.image);
+    post_info.imageUrl = await this.$context.image.link(post_info.image);
 
-    this.response.setOutput(post_info);
+    this.$context.response.setOutput(post_info);
   }
 
   @Auth()
   @POST("/post/:postId/image")
   async uploadImage() {
-    if (!_.isUndefined(this.request.files.file)) {
-      this.load.model("blog/post");
+    if (!_.isUndefined(this.$context.request.files.file)) {
+      this.$context.load.model("blog/post");
 
-      let post_info = await this.model_blog_post.getPost(
-        this.request.params.postId
+      let post_info = await this.$context.model_blog_post.getPost(
+        this.$context.request.params.postId
       );
 
       post_info.image =
@@ -76,19 +83,22 @@ export class ControllerBlogPost extends Controller {
           .substring(2, 15) +
         ".jpg";
 
-      this.file.upload(
+      this.$context.file.upload(
         this.request.files.file,
         DIR_IMAGE + "/" + post_info.image
       );
 
-      post_info = await this.model_blog_post.editPost(
-        this.request.params.postId,
+      post_info = await this.$context.model_blog_post.editPost(
+        this.$context.request.params.postId,
         post_info
       );
 
-      this.response.setOutput(post_info);
+      this.$context.response.setOutput(post_info);
     } else {
-      this.response.setOutput({ status: 404, message: "Missing file" });
+      this.$context.response.setOutput({
+        status: 404,
+        message: "Missing file"
+      });
     }
   }
 }

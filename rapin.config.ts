@@ -20,7 +20,7 @@ module.exports = {
   //Setting cache system
   cache: {
     engine: 'file',
-    expire: 3600,
+    expire: 3600
   },
   //Setting logs
   log: {
@@ -33,9 +33,5 @@ module.exports = {
     password: process.env.MAIL_PASSWORD
   },
   //List plugins
-  plugins: [
-    'plugins/testPlugin.ts',
-    '@rapin/typeorm',
-    '@rapin/typeorm-auth'
-  ]
+  plugins: ['plugins/testPlugin.ts', '@rapin/typeorm', '@rapin/typeorm-auth']
 }

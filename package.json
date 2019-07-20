@@ -11,14 +11,15 @@
   "author": "krasaler",
   "license": "ISC",
   "dependencies": {
-    "@rapin/typeorm": "^1.0.3",
+    "@rapin/typeorm": "krasaler/rapin-typeorm",
     "@rapin/typeorm-auth": "^1.0.0",
-    "rapin": "0.1.12",
-    "ts-node": "^8.0.3",
-    "typeorm": "^0.2.14"
+    "rapin": "krasaler/rapin",
+    "ts-node": "^8.3.0",
+    "typeorm": "^0.2.18"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10",
+    "@types/node": "^12.6.8",
+    "nodemon": "^1.19.1",
     "typedoc": "^0.14.2"
   }
 }

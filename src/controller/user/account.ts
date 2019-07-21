@@ -75,7 +75,7 @@ export class ControllerUserAccount extends Controller {
   @PUT("/account")
   @required(["firstName", "lastName", "telephone"])
   public async update() {
-    await this.$context.model_user_user.editUser(this.user.getId(), this.$context.request.post);
+    await this.$context.model_user_user.editUser(this.$context.user.getId(), this.$context.request.post);
 
     const userInfo = await this.$context.model_user_user.getUser(this.$context.user.getId());
 

@@ -32,11 +32,11 @@ export class ModelUserUser extends Model {
     return user
   }
 
-  public async getUserByEmail(email) {
+  public async getUserByEmail(email: string) {
     return await this.$context.db.findOne('User', {email}, {relations: ['role']})
   }
 
-  public async getUser(userId) {
+  public async getUser(userId: number) {
     return await this.$context.db.findOne('User', {id: userId}, { select: ['id', 'firstName', 'lastName', 'telephone', 'email', 'image', 'roleId'], relations: ['role'] })
   }
 

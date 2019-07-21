@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@rapin/typeorm": "krasaler/rapin-typeorm",
-    "@rapin/typeorm-auth": "^1.0.0",
+    "@rapin/typeorm-auth": "krasaler/rapin-typeorm-auth",
     "rapin": "krasaler/rapin",
     "ts-node": "^8.3.0",
     "typeorm": "^0.2.18"

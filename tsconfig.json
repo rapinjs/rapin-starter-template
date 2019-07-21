@@ -10,7 +10,7 @@
     "outDir": "./bin",
     "declaration": true,
     "baseUrl": ".",
-    "types": ["node", "@rapin/typeorm"],
+    "types": ["node", "@rapin/typeorm", "@rapin/typeorm-auth", "@rapin/inky"],
     "paths": {
       "*": ["*", "src/*"]
     }

@@ -11,9 +11,10 @@
   "author": "krasaler",
   "license": "ISC",
   "dependencies": {
-    "@rapin/typeorm": "krasaler/rapin-typeorm",
-    "@rapin/typeorm-auth": "krasaler/rapin-typeorm-auth",
-    "rapin": "krasaler/rapin",
+    "@rapin/inky": "^0.0.2",
+    "@rapin/typeorm": "^1.0.4",
+    "@rapin/typeorm-auth": "^1.0.1",
+    "rapin": "^0.1.14",
     "ts-node": "^8.3.0",
     "typeorm": "^0.2.18"
   },

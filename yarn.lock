@@ -282,10 +282,10 @@
     inky "^1.3.7"
     juice "^5.2.0"
 
-"@rapin/typeorm-auth@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@rapin/typeorm-auth/-/typeorm-auth-1.0.1.tgz#91a1b7831d2094c66196d80081eabf4557b35d5d"
-  integrity sha512-GDk96c4PfLNunLP3sa2CLkcDWbFuqaR29O9jD6dB59tHkBJoNq9mIgGHI0sfFtJUEW1T+wBC37O7vfvrtWhHoA==
+"@rapin/typeorm-auth@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@rapin/typeorm-auth/-/typeorm-auth-1.0.2.tgz#36704706fb9990787f1625f57665e8c74da4691c"
+  integrity sha512-gw0xXlLFyt/PJxBEsFLLMEvoSINbZv3IH1aVfyD0gJbTx7vkk0Fw/SvPAfjps03pG74SBq8asm5R/jm55Vfosw==
   dependencies:
     "@types/node" "^12.6.8"
     jsonwebtoken "^8.5.1"
@@ -4738,10 +4738,10 @@ randomatic@^3.0.0:
     kind-of "^6.0.0"
     math-random "^1.0.1"
 
-rapin@^0.1.14:
-  version "0.1.14"
-  resolved "https://registry.yarnpkg.com/rapin/-/rapin-0.1.14.tgz#6a204ba7c85d751f165b3871b722e304cddebbee"
-  integrity sha512-X1mCV0/Zbk1Mf7VQVRIzUlwqkLAGTNlByhGm+UmsWhuIFRVVDnX1hVtpdBxxQw2Ly3K9oK79h02f8XhfI3bUTQ==
+rapin@^0.1.16:
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/rapin/-/rapin-0.1.16.tgz#0f2d6f8a4dbb49446b5d75597b05fe9f8ff03909"
+  integrity sha512-DFQEI6fgeZ5AhuJz7dwlAVEABwBPCJeHZeFWEar2XlX6NJHPRREH1qTOsWjgjVx3KyahCB3Xm7q1CG3OMKu2iw==
   dependencies:
     axios "^0.19.0"
     dotenv "^8.0.0"

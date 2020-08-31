@@ -6,6 +6,5 @@ static/images
 .idea
 .history
 storage/cache
-/lib
 .yalc
 yalc.lock

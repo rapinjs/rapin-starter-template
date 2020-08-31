@@ -1,0 +1,132 @@
+2020-08-26 18:49:27 - bla-bla-bla-
+2020-08-26 18:49:27 - Error: ENOENT: no such file or directory, open 'D:\webserver\nodejs\rapin-starter-template\view\stylesheet/test.scss'
+    at Object.openSync (fs.js:462:3)
+    at Object.readFileSync (fs.js:364:35)
+    at Postcss.convert (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:12:36)
+    at Postcss.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:20:14)
+    at Style.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style.js:16:27)
+    at Proxy.<anonymous> (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:25:48)
+    at Generator.next (<anonymous>)
+    at D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:16:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:12:12)
+2020-08-26 18:49:28 - bla-bla-bla-
+2020-08-26 18:49:28 - Error: ENOENT: no such file or directory, open 'D:\webserver\nodejs\rapin-starter-template\view\stylesheet/test.scss'
+    at Object.openSync (fs.js:462:3)
+    at Object.readFileSync (fs.js:364:35)
+    at Postcss.convert (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:12:36)
+    at Postcss.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:20:14)
+    at Style.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style.js:16:27)
+    at Proxy.<anonymous> (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:25:48)
+    at Generator.next (<anonymous>)
+    at D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:16:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:12:12)
+2020-08-26 18:50:17 - bla-bla-bla-
+2020-08-26 18:50:17 - Error: ENOENT: no such file or directory, open 'D:\webserver\nodejs\rapin-starter-template\view\stylesheet\test.scss'
+    at Object.openSync (fs.js:462:3)
+    at Object.readFileSync (fs.js:364:35)
+    at Postcss.convert (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:13:36)
+    at Postcss.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:21:14)
+    at Style.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style.js:16:27)
+    at Proxy.<anonymous> (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:25:48)
+    at Generator.next (<anonymous>)
+    at D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:16:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:12:12)
+2020-08-26 18:50:18 - bla-bla-bla-
+2020-08-26 18:50:18 - Error: ENOENT: no such file or directory, open 'D:\webserver\nodejs\rapin-starter-template\view\stylesheet\test.scss'
+    at Object.openSync (fs.js:462:3)
+    at Object.readFileSync (fs.js:364:35)
+    at Postcss.convert (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:13:36)
+    at Postcss.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:21:14)
+    at Style.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style.js:16:27)
+    at Proxy.<anonymous> (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:25:48)
+    at Generator.next (<anonymous>)
+    at D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:16:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:12:12)
+2020-08-26 18:50:19 - bla-bla-bla-
+2020-08-26 18:50:19 - Error: ENOENT: no such file or directory, open 'D:\webserver\nodejs\rapin-starter-template\view\stylesheet\test.scss'
+    at Object.openSync (fs.js:462:3)
+    at Object.readFileSync (fs.js:364:35)
+    at Postcss.convert (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:13:36)
+    at Postcss.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style\scss.js:21:14)
+    at Style.link (D:\webserver\nodejs\rapin-starter-template\node_modules\rapin\lib\library\style.js:16:27)
+    at Proxy.<anonymous> (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:25:48)
+    at Generator.next (<anonymous>)
+    at D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:16:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\webserver\nodejs\rapin-starter-template\lib\controller\common\home.js:12:12)
+2020-08-26 18:50:39 - bla-bla-bla-
+2020-08-26 18:50:39 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:40 - bla-bla-bla-
+2020-08-26 18:50:40 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:41 - bla-bla-bla-
+2020-08-26 18:50:41 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:41 - bla-bla-bla-
+2020-08-26 18:50:41 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:41 - bla-bla-bla-
+2020-08-26 18:50:41 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:42 - bla-bla-bla-
+2020-08-26 18:50:42 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:42 - bla-bla-bla-
+2020-08-26 18:50:42 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:42 - bla-bla-bla-
+2020-08-26 18:50:42 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:49 - bla-bla-bla-
+2020-08-26 18:50:49 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:49 - bla-bla-bla-
+2020-08-26 18:50:49 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:50 - bla-bla-bla-
+2020-08-26 18:50:50 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:50 - bla-bla-bla-
+2020-08-26 18:50:50 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:51 - bla-bla-bla-
+2020-08-26 18:50:51 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:51 - bla-bla-bla-
+2020-08-26 18:50:51 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:51 - bla-bla-bla-
+2020-08-26 18:50:51 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:50:51 - bla-bla-bla-
+2020-08-26 18:50:51 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:51:14 - bla-bla-bla-
+2020-08-26 18:51:14 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:51:45 - bla-bla-bla-
+2020-08-26 18:51:45 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:51:45 - bla-bla-bla-
+2020-08-26 18:51:45 - http://localhost:4000stylesheet/test.css
+2020-08-26 18:51:46 - bla-bla-bla-
+2020-08-26 18:51:46 - http://localhost:4000stylesheet/test.css
+2020-08-31 12:59:25 - RepositoryNotFoundError: No repository for "Post" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (D:\webserver\nodejs\rapin-starter-template\node_modules\typeorm\error\RepositoryNotFoundError.js:11:28)
+    at EntityManager.getRepository (D:\webserver\nodejs\rapin-starter-template\node_modules\typeorm\entity-manager\EntityManager.js:555:19)
+    at Connection.getRepository (D:\webserver\nodejs\rapin-starter-template\node_modules\typeorm\connection\Connection.js:347:29)
+    at DB.repository (D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:46:36)
+    at DB.<anonymous> (D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:66:37)
+    at Generator.next (<anonymous>)
+    at D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:3:12)
+    at DB.find (D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:65:16)
+2020-08-31 13:31:46 - bla-bla-bla-
+2020-08-31 13:31:47 - http://localhost:4000stylesheet/test.css
+2020-08-31 13:32:46 - bla-bla-bla-
+2020-08-31 13:32:46 - http://localhost:4000stylesheet/test.css
+2020-08-31 13:34:13 - bla-bla-bla-
+2020-08-31 13:34:13 - http://localhost:4000stylesheet/test.css
+2020-08-31 13:35:02 - bla-bla-bla-
+2020-08-31 13:35:03 - http://localhost:4000stylesheet/test.css
+2020-08-31 13:36:14 - bla-bla-bla-
+2020-08-31 13:36:14 - http://localhost:4000/stylesheet/test.css
+2020-08-31 13:40:44 - RepositoryNotFoundError: No repository for "Post" was found. Looks like this entity is not registered in current "default" connection?
+    at new RepositoryNotFoundError (D:\webserver\nodejs\rapin-starter-template\node_modules\typeorm\error\RepositoryNotFoundError.js:11:28)
+    at EntityManager.getRepository (D:\webserver\nodejs\rapin-starter-template\node_modules\typeorm\entity-manager\EntityManager.js:555:19)
+    at Connection.getRepository (D:\webserver\nodejs\rapin-starter-template\node_modules\typeorm\connection\Connection.js:347:29)
+    at DB.repository (D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:46:36)
+    at DB.<anonymous> (D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:66:37)
+    at Generator.next (<anonymous>)
+    at D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:3:12)
+    at DB.find (D:\webserver\nodejs\rapin-starter-template\node_modules\@rapin\typeorm\lib\plugin.js:65:16)

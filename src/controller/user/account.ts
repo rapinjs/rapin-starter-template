@@ -6,9 +6,9 @@ export class ControllerUserAccount extends Controller {
   constructor(registry) {
     super(registry);
     
-    this.$context.load.language("user/user");
-    this.$context.load.model("user/user");
-    this.$context.load.model("user/role");
+    // this.$context.load.language("user/user");
+    // this.$context.load.model("user/user");
+    // this.$context.load.model("user/role");
   }
 
   @POST("/account/register")

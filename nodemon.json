@@ -1,0 +1,4 @@
+{
+  "watch": ["lib", "view", "language"],
+  "ext": "*.[js,json,twig]"
+}

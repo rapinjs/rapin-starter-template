@@ -36,9 +36,9 @@ export class ControllerBlogPost extends Controller {
   async list() {
     this.$context.load.model("blog/post");
 
-    let posts = await this.$context.model_blog_post.getPosts();
+    const posts = await this.$context.model_blog_post.getPosts();
 
-    for (let key in posts) {
+    for (const key in posts) {
       posts[key].imageUrl = await this.$context.image.link(
         posts[key].image
       );
@@ -53,16 +53,16 @@ export class ControllerBlogPost extends Controller {
 
     this.$context.load.model("blog/post");
 
-    let data = {};
+    const data = {};
 
     data["title"] = this.$context.language.get("text_title");
 
-    let post_info = await this.$context.model_blog_post.getPost(
+    const post_info = await this.$context.model_blog_post.getPost(
       this.request.params.postId
     );
 
     post_info.imageUrl = await this.$context.image.link(post_info.image);
-
+      
     this.$context.response.setOutput(post_info);
   }
 

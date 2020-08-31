@@ -1,17 +1,18 @@
-const path = require('path')
 module.exports = {
   //Database access
   db: {
+    synchronize: true,
     type: 'mysql',
     database: process.env.DB_DATABASE,
     hostname: process.env.DB_HOSTNAME,
     password: process.env.DB_PASSWORD,
     username: process.env.DB_USERNAME,
-    port: process.env.DB_PORT
+    port: process.env.DB_PORT,
+    entities: ['lib/entities/**/*.js']
   },
   //Style setting
   style: {
-    engine: 'postcss'
+    engine: 'scss'
   },
   //Template setting
   template: {
@@ -33,5 +34,5 @@ module.exports = {
     password: process.env.MAIL_PASSWORD
   },
   //List plugins
-  plugins: ['plugins/testPlugin.ts', '@rapin/typeorm', '@rapin/typeorm-auth']
+  plugins: ['plugins/testPlugin', '@rapin/typeorm', '@rapin/typeorm-auth']
 }
